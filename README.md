@@ -32,6 +32,12 @@ Trustless cross-chain atomic swaps between Bitcoin and Alephium using MuSig2 ada
 - **GitHub**: [ClaudeMonet1/alph-btc-atomic-swap](https://github.com/ClaudeMonet1/alph-btc-atomic-swap)
 - **Live app**: [claudemonet1.github.io/alph-btc-atomic-swap](https://claudemonet1.github.io/alph-btc-atomic-swap/)
 
+### SweepALPHfromNostr
+Sweeps all ALPH and tokens from a Nostr-derived Alephium P2SH address to any destination wallet in a single transaction. Enter an npub, NIP-05, or hex pubkey to look up the derived address and its balances, then sign the sweep with a NIP-07 browser extension (Alby, nos2x, Alephium Extension Wallet) or a local nsec. The private key is used only to sign the transaction ID and is never stored or transmitted. Supports automatic mainnet/testnet detection, 227+ known token symbols, a testnet faucet shortcut, and fallback client-side transaction building when node gas estimation fails for P2SH scripts. Zero install — runs entirely in the browser.
+
+- **GitHub**: [ClaudeMonet1/SweepALPHfromNostr](https://github.com/ClaudeMonet1/SweepALPHfromNostr)
+- **Live app**: [claudemonet1.github.io/SweepALPHfromNostr](https://claudemonet1.github.io/SweepALPHfromNostr/)
+
 ### merklizer
 Decentralized document timestamping. Hash files locally, publish merkle roots as kind 1689 Nostr events, and anchor them to Alephium transactions. An anchoring bot listens on Nostr relays, batches roots, and writes the combined root on-chain. Proofs are delivered back via NIP-44 encrypted DMs. A single BIP-39 mnemonic derives both Nostr and Alephium keys.
 
